@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Check Extramarital affair
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+<body>
+<h1>Fill in the Details</h1>
+<div class="full_form">
+    <p>Carefully read all these things and then proceed</p>
+    <p>
+        P_class:Passenger Class<br>
+        Sex:Male or Female<br>
+        Age:Age of the Person<br>
+        SibSp:Sibling Aboard<br>
+        Parch:Parents/Children aboard<br>
+        Fare:Tickets Price
+    </p>
+
+
+</div>
+<div class="container">
+    <form action="/prediction" method="POST">
+        <input type="text" name="input1" placeholder="Enter Passenger Class" required="required">
+        <input type="text" name="input2" placeholder="Enter Sex" required="required">
+        <input type="text" name="input3" placeholder="Enter Age" required="required">
+        <input type="text" name="input4" placeholder="Enter SibSp" required="required">
+        <input type="text" name="input5" placeholder="Enter Parch" required="required">
+        <input type="text" name="input6" placeholder="Enter Fare" required="required">
+
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
